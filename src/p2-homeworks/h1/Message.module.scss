@@ -1,0 +1,61 @@
+.MessageComponent_wrapper {
+    display: flex;
+
+    .avatar {
+        //width: 60px;
+        height: 50px;
+        align-self: flex-end;
+        margin-left: 10px;
+
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            max-width: 100%;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    }
+    .message_wrapper{
+        display: flex;
+        flex-flow: wrap column;
+        background: darkslategray;
+        border-radius: 5px;
+        width: 300px;
+        font-size: 1.2rem;
+        padding: 5px 10px 15px 10px;
+        margin-left: 10px;
+        position: relative;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 20px; bottom: -20px;
+            border: 10px solid transparent;
+            border-top: 10px solid darkslategray;
+        }
+        //&:after {
+        //    border-top: 10px solid white;
+        //    bottom: -19px;
+        //}
+        .userName {
+            color: cornflowerblue;
+        }
+        .messageText {
+            color: white;
+
+        }
+        .messageTime {
+            align-self: flex-end;
+            color: dimgray;
+            line-height: 1px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
