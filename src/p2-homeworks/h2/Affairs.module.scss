@@ -1,0 +1,18 @@
+.priorityButton {
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background: none;
+    box-sizing: border-box;
+    padding: 5px;
+    &:hover{
+        border: 2px solid darkslateblue;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+    &:active{
+        background: darkslateblue
+    }
+}
+
+
